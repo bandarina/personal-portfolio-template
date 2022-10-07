@@ -14,6 +14,6 @@ To update:
 - refractor CSS
 
 ## How to run
-run `npm install`
+### run `npm install`
 
-run `npm start`
+### run `npm start`
