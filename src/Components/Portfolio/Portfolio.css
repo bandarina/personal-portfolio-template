@@ -1,0 +1,35 @@
+.Portfolio{
+    height: 100vh;
+    background-color: #134D9D;
+    color: white;
+}
+
+.right, .left{
+    font-size: 2rem;
+    position: relative;
+    z-index: 999;
+    cursor: pointer;
+}
+.right:hover, .left:hover{
+    background-color: gray;
+}
+
+.right{
+    float: right;
+    top: 50vh;
+}
+.left{
+    float: left;
+    top: 50vh;
+}
+.SlideShowTitle{
+    position: absolute;
+    right: 0;
+    opacity: 0;
+}
+.active{
+    transition: right linear 1s;
+    right: 100px;
+    opacity: 1;
+    
+}

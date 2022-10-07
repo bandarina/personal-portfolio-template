@@ -1,0 +1,109 @@
+.Hero{
+    background-image: url(./hero.png);
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hello{
+    font-family: 'Poppins', sans-serif;
+    color: #7EC8E3;
+    font-size: 2rem;
+    position: relative;
+    top: -7vh;
+}
+
+.name{
+    font-family: 'Palanquin Dark', sans-serif;
+    color: white;
+    font-size: 3.5rem;
+    position: relative;
+    top: -7vh;
+}
+
+.description{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 1.4rem;
+}
+.hire{
+    position: relative;
+    bottom: -7vh;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3rem;
+    border: 1px solid white;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.ResumeContainer{
+    height: 40vh;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.intro{
+    color: #2A3344;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5rem;
+    padding-top: 3vh;
+}
+
+.resume{
+    width: fit-content;
+    align-self: center;
+    padding: 20px;
+    background-color: #2A3344;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
+.heroImage{
+    display: none;
+}
+@media only screen and (min-width: 1000px){
+    .HeroContainer{
+        display: flex;
+        height: 100vh;
+    }
+    .DescriptionContainer{
+        width: 60vw;
+    }
+    .Hero{
+        height: 100%;
+        width: 40vw;
+    }
+    .heroImage{
+        display: flex;
+        height: 73%;
+        
+    }
+    .heroImage img{
+        object-fit: cover;
+        width: 100%;
+        
+    }
+    .ResumeContainer{
+        width: 100%;
+        margin: 0;
+        justify-content: flex-start;
+    }
+    .intro{
+        padding-left: 1rem;
+        padding-right: 1rem;
+        font-size: 0.7rem;
+        line-height: 1  rem;
+        
+    }
+    .resume{
+        margin-top: 1rem;
+        font-size: 0.8rem;
+    }
+
+}

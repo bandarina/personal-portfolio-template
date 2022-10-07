@@ -1,0 +1,47 @@
+.Slideshow{
+    overflow: hidden;
+    width: 100%;
+    height: 93%;
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.slideshowSlider{
+    transition: ease 1000ms;
+    white-space: nowrap;
+
+}
+.slideshowSlider > .slide{
+    white-space: normal;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    
+}
+
+.slide h1{
+    margin-top: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.slide img{
+    width: 100%;
+    max-height: 380px;
+    display: block;
+    background-color: black;
+    max-width: 600px;
+    margin: 2vh auto;
+}
+
+.slide .desc{
+    width: 80%;
+    margin: 0 auto;
+    font-family: 'Palanquin Dark', sans-serif;
+    font-size: 1.2rem;
+}

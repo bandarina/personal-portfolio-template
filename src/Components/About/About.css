@@ -1,0 +1,52 @@
+.About{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #7EC8E3;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.section{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+    flex-grow: 1;
+    margin-top: 2vh;
+}
+
+  
+.title{
+    align-self: center;
+    font-size: 1.2rem;
+    flex-grow: 1;
+
+}
+.text{
+    line-height: 1.2rem;
+    flex-grow: 1;
+}
+hr{
+    height: 2px;
+    width: 100%;
+    color: #2A3344;
+    border-color: #2A3344;
+    background-color: #2A3344;
+}
+
+@media only screen and (min-width: 1000px){
+    .About{
+        flex-direction: row;
+        padding: 2rem;
+    }
+    hr{
+        display: none;
+    }
+    .section{
+        margin-left: 2rem;
+    }
+    .title{
+        font-size: 2rem;
+    }
+}

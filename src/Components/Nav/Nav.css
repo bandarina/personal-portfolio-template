@@ -1,0 +1,106 @@
+.NavContainer{
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    position: fixed;
+    width: 100%;
+    flex-wrap: wrap;
+    z-index: 999;
+}
+
+.Nav{
+    position: absolute;
+    background-color: #2A3344;
+    right: 0;
+    color: white;
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    transition: width linear 0.2s;
+}
+.hide{
+    width: 0px;
+}
+
+.Menu{
+    position: static;
+    display: flex;
+    transition: opacity 0.1s ease-in 0.3s;
+    flex-grow: 0.7;
+    justify-content: stretch;
+    text-align: center;
+    
+    
+}
+.Menu a{
+    cursor: pointer;
+    flex-grow: 1;
+    height: 70%;
+    justify-content: center;
+    color: inherit;
+    text-decoration: none;
+}
+.navActive{
+    background-color: #2E8BC080
+
+}
+
+.Menu.hide{
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0s;
+}
+.MenuItem{
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8rem;
+    position: relative;
+    top: 60%;
+}
+.MenuItem{
+    cursor: pointer;
+}
+
+
+.MenuIcon{
+    display: flex;
+    align-items: center;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 1000px){
+    .Nav, .NavContainer{
+        flex-direction: column;
+        height: 100vh;
+        right: 0;
+    }
+    
+    .NavContainer{
+        width: 5vw;
+    }
+    .Nav{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .Menu{
+        flex-direction: column;
+        flex-grow: 0.9;
+        text-align: center;
+    }
+    .Menu a{
+        display: flex;
+        height: 0; 
+        align-items: center;
+        justify-content: center;   
+    }
+    .MenuItem{
+        position: static;
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+    }
+}
+
+
